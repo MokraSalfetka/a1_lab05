@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header, .footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header {
+    border-bottom: 3px solid #007acc;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #007acc;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width: 770px) {
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+.left-div, .center-div, .right-div {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.left-div {
+    text-align: center;
+}
+
+.left-div img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #007acc;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: capitalize;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #555555;
+}
+
+.list {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.list-item {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #005f99;
+    text-decoration: underline;
+}
+
+u {
+    position: relative;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+u::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #007acc;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #333333;
+    margin-top: auto;
+    font-weight: 500;
+}
